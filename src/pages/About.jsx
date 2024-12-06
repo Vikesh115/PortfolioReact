@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaReact, FaJs, FaHtml5, FaCss3, FaGit, FaNodeJs } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiReactrouter } from "react-icons/si";
 
 function About() {
   return (
@@ -30,6 +31,18 @@ function About() {
           <div className='flex gap-1'>
             <div><FaNodeJs size={24} /></div>
             <div>NodeJS</div>
+          </div>
+          <div className='flex gap-1'>
+            <div><SiExpress size={24} /></div>
+            <div>ExpressJS</div>
+          </div>
+          <div className='flex gap-1'>
+            <div><SiMongodb size={24} /></div>
+            <div>MongoDB</div>
+          </div>
+          <div className='flex gap-1'>
+            <div><SiReactrouter size={24} /></div>
+            <div>react-router-dom</div>
           </div>
         </div>
       </div>
