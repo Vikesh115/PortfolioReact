@@ -5,7 +5,7 @@ import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 function Footer() {
   return (
     <div className='flex w-[100%] justify-center items-center bg-white'>
-      <div className='flex flex-wrap flex-col justify-center items-center gap-6 w-[90%] bg-black text-white pb-6'>
+      <div className='flex flex-wrap flex-col justify-center items-center gap-3 md:gap-6 w-[90%] bg-black text-white p-2'>
         <span className='flex justify-center md:text-2xl'>Contact</span>
         <form action="post" className='flex flex-col justify-center items-center max-w-[70%] '>
           <input type="text" name="name" placeholder='name' id="" className='flex p-2 rounded-2xl'/>
