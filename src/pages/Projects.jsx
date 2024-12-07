@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { project1, project2 } from '../shared/data';
 
 function Projects() {
   return (
@@ -16,10 +17,9 @@ function Projects() {
               <NavLink className='flex' to="https://github.com/Vikesh115" target='none'><FaExternalLinkAlt size={20} /></NavLink>
             </span>
             <span className='flex md:flex-row flex-wrap gap-2 md:gap-6 justify-center'>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>React</span>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>Nodejs</span>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>Express</span>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>MongoDB</span>
+              {project1.map((skill) => (
+                <span key={skill.id} className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>{skill.name}</span>
+              ))}
             </span>
           </div>
           <div className='flex w-[80%]  md:w-[30%] h-[30%]'>
@@ -37,11 +37,9 @@ function Projects() {
               <span className='flex'><NavLink to="https://github.com/Vikesh115" target='none'><FaExternalLinkAlt size={20} /></NavLink></span>
             </span>
             <div className='flex flex-row flex-wrap gap-2 md:gap-6 justify-center'>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>Rest API</span>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>Nodejs</span>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>Express</span>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>MongoDB</span>
-              <span className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>POSTMAN</span>
+              {project2.map((skill) => (
+                <span key={skill.id} className='flex text-black font-semibold bg-white rounded-md p-1 h-6 items-center justify-center'>{skill.name}</span>
+              ))}
             </div>
           </div>
         </div>
