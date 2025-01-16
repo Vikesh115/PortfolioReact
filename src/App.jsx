@@ -11,23 +11,23 @@ import NavRes from "./components/NavRes";
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <NavRes/>
-      <Routes>
-        <Route
-         path='/'
-         element={<Main/>}
-        />
-        <Route
-         path='/project'
-         element={<Projects/>}
-        />
-        <Route
-         path='/about'
-         element={<About/>}
-        />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <NavRes />
+        <Routes>
+          <Route
+            path='/'
+            element={<Main />}
+          />
+          <Route
+            path='/project'
+            element={<Projects />}
+          />
+          <Route
+            path='/about'
+            element={<About />}
+          />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

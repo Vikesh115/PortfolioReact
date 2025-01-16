@@ -1,21 +1,22 @@
 import React from 'react'
-import { skills } from '../shared/data';
 
 function AboutTest() {
   return (
-    <div className='flex w-[100%] justify-center items-center bg-white'>
-      <div className='flex flex-col flex-wrap justify-center items-center w-[90%] bg-black text-white p-2 md:p-8'>
-        <span className='flex text-white justify-center items-center text-2xl'>Skills</span>
-        <div className='flex flex-row flex-wrap gap-2 md:gap-4 justify-center items-center p-2 md:p-8 w-[90%] md:w-[50%]'>
-          
-        {skills.map((skill)=>(
-            <div className='flex gap-1' key={skill.id}>
-            <span><skill.logo size={24}/></span>
-            <span>{skill.name}</span>
-          </div>
-        ))}
-
+    <div className='md:flex bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[100%] gap-3 justify-center items-center'>
+      <div className="flex justify-center md:pt-5 md:mt-0 md:w-[40%] w-[100%]">
+        <div className="flex flex-col flex-wrap bg-gradient-to-r from-indigo-500 via-lime-500 to-cyan-500 text-white font-bold p-4 rounded-lg shadow-2xl w-[100%]">
+            <div className='flex justify-center font-bold text-2xl'>About ME</div>
+            <div className='flex pt-10'>
+            Web Developer with expertise of React.js, Redux, HTML and CSS. currently learning Full stack development.
+            </div>
+            <div className='flex py-10'>
+            I am passionate programmer and a learner, born and brought up in India.Currently, I am enrolled in Full satck Web Development Program by Almabetter.
+            I love learning about new technologies, what problems are they solving and How can I use them to build better and scalable products.
+            </div>
         </div>
+      </div>
+      <div className='md:flex hidden md:w-[40%] w-[100%] justify-center'>
+        <img src="https://assets-v2.lottiefiles.com/a/c3a6dd4c-117e-11ee-9c3a-7f367549e774/a9hBSeOLNx.gif" alt="" />
       </div>
     </div>
   )

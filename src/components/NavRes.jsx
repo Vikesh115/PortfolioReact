@@ -15,54 +15,14 @@ function NavRes() {
     };
 
     return (
-        <div className="fixed w-[100%] z-20 flex bg-white  justify-center text-white">
-            <div className="flex w-[90%] justify-between bg-black p-6">
-            <NavLink to="/">
-                <IoLogoVimeo size={36}/>
-            </NavLink>
-            <div className="hidden md:flex space-x-8 text-xl font-bold">
-                <NavLink
-                    to="/"
-                    style={({ isActive }) => ({
-                        color: isActive ? "#66CDAA" : "white",
-                    })}
-                >
-                    Main
+        <div className="fixed w-[100%] z-20 flex justify-center text-white">
+            <div className="flex w-[100%] justify-between bg-gradient-to-r from-violet-500 to-fuchsia-500 p-6">
+                <NavLink to="/">
+                    <IoLogoVimeo size={36} />
                 </NavLink>
-                <NavLink
-                    to="/about"
-                    style={({ isActive }) => ({
-                        color: isActive ? "#BA55D3" : "white",
-                    })}
-                >
-                    About
-                </NavLink>
-                <NavLink
-                    to="/project"
-                    style={({ isActive }) => ({
-                        color: isActive ? "#F0E68C" : "white",
-                    })}
-                >
-                    Project
-                </NavLink>
-            </div>
-
-            <div onClick={handleNav} className="md:hidden mr-4">
-                {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-            </div>
-
-            <ul
-                className={
-                    nav
-                        ? "fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-opacity-100 bg-slate-800 duration-500"
-                        : "w-[100%] duration-500 fixed left-[-100%]"
-                }
-            >
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <b className="text-3xl bg-red-600 p-3">Portfolio</b>
+                <div className="hidden md:flex space-x-8 text-xl font-bold">
                     <NavLink
                         to="/"
-                        onClick={closeNav} // Close nav when this link is clicked
                         style={({ isActive }) => ({
                             color: isActive ? "#66CDAA" : "white",
                         })}
@@ -70,16 +30,73 @@ function NavRes() {
                         Main
                     </NavLink>
                     <NavLink
+                        to="/about"
+                        style={({ isActive }) => ({
+                            color: isActive ? "blue" : "white",
+                        })}
+                    >
+                        About
+                    </NavLink>
+                    <NavLink
                         to="/project"
-                        onClick={closeNav} // Close nav when this link is clicked
                         style={({ isActive }) => ({
                             color: isActive ? "#F0E68C" : "white",
                         })}
                     >
                         Project
                     </NavLink>
+                    {/* Resume Section */}
+                    <a
+                        href="../../public/Resume/Vikesh-Full-Stack-Developer.pdf"
+                        download="My_Resume.pdf"
+                        className="hover:text-[#FFD700] transition-all duration-200"
+                    >
+                        Resume
+                    </a>
                 </div>
-            </ul>
+
+                <div onClick={handleNav} className="md:hidden mr-4">
+                    {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+                </div>
+
+                <ul
+                    className={
+                        nav
+                            ? "fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-opacity-100 bg-slate-800 duration-500"
+                            : "w-[100%] duration-500 fixed left-[-100%]"
+                    }
+                >
+                    <div className="flex flex-col justify-center items-center gap-4">
+                        <b className="text-3xl bg-red-600 p-3">Portfolio</b>
+                        <NavLink
+                            to="/"
+                            onClick={closeNav} // Close nav when this link is clicked
+                            style={({ isActive }) => ({
+                                color: isActive ? "#66CDAA" : "white",
+                            })}
+                        >
+                            Main
+                        </NavLink>
+                        <NavLink
+                            to="/project"
+                            onClick={closeNav} // Close nav when this link is clicked
+                            style={({ isActive }) => ({
+                                color: isActive ? "#F0E68C" : "white",
+                            })}
+                        >
+                            Project
+                        </NavLink>
+                        {/* Resume Section for Mobile */}
+                        <a
+                            href="/path/to/your-resume.pdf"
+                            download="My_Resume.pdf"
+                            className="hover:text-[#FFD700] transition-all duration-200"
+                            onClick={closeNav}
+                        >
+                            Resume
+                        </a>
+                    </div>
+                </ul>
             </div>
         </div>
     );

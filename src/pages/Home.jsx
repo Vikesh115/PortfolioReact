@@ -6,7 +6,7 @@ import { GiDiamonds } from "react-icons/gi";
 function Home() {
   return (
     <div className='flex w-[100%] justify-center items-center bg-white'>
-      <div className='flex flex-col flex-wrap justify-center items-center md:gap-6 gap-4 w-[90%] bg-black text-white mt-20 p-8'>
+      <div className='flex flex-col flex-wrap justify-center items-center md:gap-6 gap-4 w-[100%] bg-gradient-to-r from-cyan-500 to-blue-500 text-white mt-20 p-8'>
 
         <div className='flex text-4xl flex-row gap-2'>
           <span className='flex'><GiDiamonds /></span>
