@@ -6,7 +6,7 @@ import { project1, project2 } from '../shared/data';
 function Projects() {
   return (
     <div className='flex w-[100%]  items-center '>
-      <div className='flex flex-col flex-wrap  items-center gap-2 md:gap-8 w-[100%] bg-gradient-to-r from-indigo-500 via-purple-500 to-gray-500 p-4'>
+      <div className='flex flex-col flex-wrap  items-center gap-2 md:gap-8 w-[100%] bg-indigo-500 p-4'>
 
         <span className='flex font-bold text-2xl text-white pt-20'>Projects</span>
 
