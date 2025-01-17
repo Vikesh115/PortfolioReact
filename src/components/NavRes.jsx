@@ -47,7 +47,7 @@ function NavRes() {
                     </NavLink>
                     {/* Resume Section */}
                     <a
-                        href="../../public/Resume/Vikesh-Full-Stack-Developer.pdf"
+                        href="/Resume/Vikesh-Full-Stack-Developer.pdf"
                         download="Resume.pdf"
                         className="hover:text-[#FFD700] transition-all duration-200"
                     >
