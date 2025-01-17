@@ -14,7 +14,7 @@ function Projects() {
           <div className='flex md:rounded-l-lg bg-gradient-to-r from-stone-500 via-purple-500 to-teal-50 flex-col w-[100%] md:w-[100%] gap-2 justify-center items-center'>
             <span className='flex text-xl gap-2 items-center justify-center'>
               <span className='flex text-2xl'>Food delivery app</span>
-              <NavLink className='flex' to="https://food-app-one-ruddy.vercel.app/signup" target='none'><FaExternalLinkAlt size={20} /></NavLink>
+              <NavLink className='flex' to="https://github.com/Vikesh115/FoodAppFrontend" target='none'><FaExternalLinkAlt size={20} /></NavLink>
             </span>
             <span className='flex md:flex-row flex-wrap gap-2 md:gap-6 justify-center p-1'>
               {project1.map((skill) => (
@@ -34,7 +34,7 @@ function Projects() {
           <div className='flex bg-gradient-to-r from-purple-500 via-sky-500 to-green-500 flex-col w-[100%] md:w-[100%] gap-2 justify-center items-center md:rounded-r-lg'>
             <span className='flex text-xl gap-2 items-center justify-center'>
               <span className='flex text-2xl'>GET Youtube Subscriber</span>
-              <span className='flex'><NavLink to="https://github.com/Vikesh115" target='none'><FaExternalLinkAlt size={20} /></NavLink></span>
+              <span className='flex'><NavLink to="https://github.com/Vikesh115/Youtube-Subscribers-Project" target='none'><FaExternalLinkAlt size={20} /></NavLink></span>
             </span>
             <div className='flex flex-row flex-wrap gap-2 md:gap-6 justify-center p-1'>
               {project2.map((skill) => (
