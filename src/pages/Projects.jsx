@@ -11,7 +11,7 @@ function Projects() {
         <span className='flex font-bold text-2xl text-white md:pt-20'>Projects</span>
 
         <div className='flex w-[90%] md:flex-nowrap flex-wrap-reverse justify-center'>
-          <div className='flex md:rounded-l-lg bg-gradient-to-r from-stone-500 via-purple-500 to-teal-50 flex-col w-[100%] md:w-[100%] gap-2 justify-center items-center'>
+          <div className='flex md:rounded-l-lg bg-gradient-to-r from-stone-500 via-purple-500 to-teal-100 flex-col w-[100%] md:w-[100%] gap-2 justify-center items-center'>
             <span className='flex text-xl gap-2 items-center justify-center'>
               <span className='flex text-2xl'>Food delivery app</span>
               <NavLink className='flex' to="https://github.com/Vikesh115/FoodAppFrontend" target='none'><FaExternalLinkAlt size={20} /></NavLink>
