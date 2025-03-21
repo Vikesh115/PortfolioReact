@@ -40,17 +40,17 @@ function Projects() {
             </span>
           </div>
           <div className='flex md:rounded'>
-            <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-r-lg' />
+            <img src="https://images.pexels.com/photos/172872/pexels-photo-172872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-r-lg' />
           </div>
         </div>
 
         <div className='flex w-[90%] flex-wrap md:flex-nowrap  justify-center '>
           <div className='flex '>
-            <img src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-l-lg'/>
+            <img src="https://images.pexels.com/photos/16587507/pexels-photo-16587507/free-photo-of-youtube-music-stream-songs-and-music-videos-app-on-the-display-of-smartphone-or-tablet.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-l-lg'/>
           </div>
           <div className='flex bg-white flex-col w-[100%] md:w-[100%] gap-2 justify-center items-center md:rounded-r-lg'>
             <span className='flex text-xl gap-2 items-center justify-center'>
-              <span className='flex text-2xl'>GET Youtube Subscriber</span>
+              <span className='flex text-2xl'>Youtube API</span>
               <span className='flex'><NavLink to="https://github.com/Vikesh115/Youtube-Subscribers-Project" target='none'><FaExternalLinkAlt size={20} /></NavLink></span>
             </span>
             <div className='flex flex-row flex-wrap gap-2 md:gap-6 justify-center p-1'>
