@@ -1,10 +1,15 @@
-import { FaReact, FaCss3, FaGit, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaCss3, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiReactrouter } from "react-icons/si";
 
 export const skills = [
     {
-        id: 1,
+        id: 0,
         name: "React",
+        logo: FaReact
+    },
+    {
+        id: 1,
+        name: "Redux-Toolkit",
         logo: FaReact
     },
     {
