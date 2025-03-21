@@ -1,36 +1,21 @@
-import { FaReact, FaJs, FaHtml5, FaCss3, FaGit, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaCss3, FaGit, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiReactrouter } from "react-icons/si";
 
 export const skills = [
-    {
-        id: 0,
-        name: "javascript",
-        logo: FaJs,
-    },
     {
         id: 1,
         name: "React",
         logo: FaReact
     },
     {
-        id: 2,
-        name: "Html",
-        logo: FaHtml5
-    },
-    {
         id: 3,
-        name: "Css",
+        name: "Tailwind css",
         logo: FaCss3
     },
     {
         id: 4,
         name: "Nodejs",
         logo: FaNodeJs
-    },
-    {
-        id: 5,
-        name: "Git",
-        logo: FaGit
     },
     {
         id: 6,
