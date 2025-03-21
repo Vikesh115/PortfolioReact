@@ -16,7 +16,7 @@ function NavRes() {
 
     return (
         <div className="fixed w-[100%] z-20 flex justify-center text-white">
-            <div className="flex w-[100%] justify-between bg-gradient-to-r from-violet-500 to-fuchsia-500 p-6">
+            <div className="flex w-[100%] justify-between bg-black text-white p-6">
                 <NavLink to="/">
                     <IoLogoVimeo size={36} />
                 </NavLink>
