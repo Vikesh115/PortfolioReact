@@ -30,8 +30,8 @@ function Projects() {
         <div className='flex w-[90%] md:flex-nowrap flex-wrap-reverse justify-center'>
           <div className='flex md:rounded-l-lg bg-white flex-col w-[100%] md:w-[100%] gap-2 justify-center items-center'>
             <span className='flex text-xl gap-2 items-center justify-center'>
-              <span className='flex text-2xl'>Food delivery app</span>
-              <NavLink className='flex' to="https://github.com/Vikesh115/FoodAppFrontend" target='none'><FaExternalLinkAlt size={20} /></NavLink>
+              <span className='flex text-2xl'>Hotel APP</span>
+              <NavLink className='flex' to="https://github.com/Vikesh115/Hotel-Booking-Website" target='none'><FaExternalLinkAlt size={20} /></NavLink>
             </span>
             <span className='flex md:flex-row flex-wrap gap-2 md:gap-6 justify-center p-1'>
               {project1.map((skill) => (
@@ -40,7 +40,7 @@ function Projects() {
             </span>
           </div>
           <div className='flex md:rounded'>
-            <img src="https://images.pexels.com/photos/29306497/pexels-photo-29306497/free-photo-of-delicious-doner-kebab-with-fries-and-cola.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-r-lg' />
+            <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-r-lg' />
           </div>
         </div>
 
