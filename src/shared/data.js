@@ -31,6 +31,11 @@ export const skills = [
         id: 5,
         name: "MongoDB",
         logo: SiMongodb
+    },
+    {
+        id: 5,
+        name: "TMDB api",
+        logo: SiMongodb
     }
 ]
 
@@ -47,6 +52,10 @@ export const project1 = [
     {
         id: 2,
         name: "Tailwind css"
+    },
+    {
+        id: 3,
+        name: "liteAPI"
     }
 ]
 
