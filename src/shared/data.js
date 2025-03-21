@@ -56,19 +56,11 @@ export const project2 = [
         name: "Nodejs"
     },
     {
-        id: 1,
-        name: "REST api"
-    },
-    {
         id: 2,
         name: "Express"
     },
     {
         id: 3,
         name: "MongoDB"
-    },
-    {
-        id: 4,
-        name: "Postman"
     }
 ]
