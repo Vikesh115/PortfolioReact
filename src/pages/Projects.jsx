@@ -21,7 +21,7 @@ function Projects() {
             </span>
             <div className='flex flex-row flex-wrap gap-2 md:gap-6 justify-center p-1'>
               {skills.map((skill) => (
-                <span key={skill.id} className='flex text-black font-semibold bg-white rounded-md p-2 items-center justify-center'>{skill.name}</span>
+                <span key={skill.id} className='flex text-white font-semibold bg-black rounded-md p-2 items-center justify-center'>{skill.name}</span>
               ))}
             </div>
           </div>
@@ -35,7 +35,7 @@ function Projects() {
             </span>
             <span className='flex md:flex-row flex-wrap gap-2 md:gap-6 justify-center p-1'>
               {project1.map((skill) => (
-                <span key={skill.id} className='flex text-black font-semibold bg-white rounded-md p-2  items-center justify-center'>{skill.name}</span>
+                <span key={skill.id} className='flex text-white font-semibold bg-black rounded-md p-2  items-center justify-center'>{skill.name}</span>
               ))}
             </span>
           </div>
@@ -55,7 +55,7 @@ function Projects() {
             </span>
             <div className='flex flex-row flex-wrap gap-2 md:gap-6 justify-center p-1'>
               {project2.map((skill) => (
-                <span key={skill.id} className='flex text-black font-semibold bg-white rounded-md p-2 items-center justify-center'>{skill.name}</span>
+                <span key={skill.id} className='flex text-white font-semibold bg-black rounded-md p-2 items-center justify-center'>{skill.name}</span>
               ))}
             </div>
           </div>
