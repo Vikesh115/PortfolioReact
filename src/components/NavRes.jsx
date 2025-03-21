@@ -32,7 +32,7 @@ function NavRes() {
                     <NavLink
                         to="/about"
                         style={({ isActive }) => ({
-                            color: isActive ? "blue" : "white",
+                            color: isActive ? "oklch(0.707 0.165 254.624)" : "white",
                         })}
                     >
                         About
