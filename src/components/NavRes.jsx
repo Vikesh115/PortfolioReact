@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { FaSun, FaMoon } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
 import { IoLogoVimeo } from "react-icons/io5";
 
-function NavRes() {
+function NavRes({ toggleTheme, theme }) {
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
@@ -15,8 +16,11 @@ function NavRes() {
     };
 
     return (
-        <div className="fixed w-[100%] z-20 flex justify-center text-white">
-            <div className="flex w-[100%] justify-between bg-black text-white p-6">
+        <div className={` fixed w-[100%] z-20 flex justify-center div duration-300 ${theme === 'light'
+            ? 'bg-white text-black'
+            : 'bg-black text-white'
+            }`}>
+            <div className="flex w-[100%] justify-between p-6">
                 <NavLink to="/">
                     <IoLogoVimeo size={36} />
                 </NavLink>
@@ -24,7 +28,7 @@ function NavRes() {
                     <NavLink
                         to="/"
                         style={({ isActive }) => ({
-                            color: isActive ? "#66CDAA" : "white",
+                            color: isActive ? "pink" : "blue",
                         })}
                     >
                         Main
@@ -32,7 +36,7 @@ function NavRes() {
                     <NavLink
                         to="/about"
                         style={({ isActive }) => ({
-                            color: isActive ? "oklch(0.707 0.165 254.624)" : "white",
+                            color: isActive ? "yellow" : "blue",
                         })}
                     >
                         About
@@ -40,7 +44,7 @@ function NavRes() {
                     <NavLink
                         to="/project"
                         style={({ isActive }) => ({
-                            color: isActive ? "#F0E68C" : "white",
+                            color: isActive ? "green" : "blue",
                         })}
                     >
                         Project
@@ -49,10 +53,17 @@ function NavRes() {
                     <a
                         href="/Resume/Vikesh-Full-Stack-Developer.pdf"
                         download="Resume.pdf"
-                        className="hover:text-[#FFD700] transition-all duration-200"
+                        className="hover:text-[#FFD700] text-indigo-400 transition-all duration-200"
                     >
                         Resume
                     </a>
+                    <button onClick={toggleTheme}>
+                        {theme === 'light' ? (
+                            <FaMoon size={20} />
+                        ) : (
+                            <FaSun size={20} />
+                        )}
+                    </button>
                 </div>
 
                 <div onClick={handleNav} className="md:hidden mr-4">
@@ -72,7 +83,7 @@ function NavRes() {
                             to="/"
                             onClick={closeNav} // Close nav when this link is clicked
                             style={({ isActive }) => ({
-                                color: isActive ? "#66CDAA" : "white",
+                                color: isActive ? "grey" : "blue",
                             })}
                         >
                             Main
@@ -81,7 +92,7 @@ function NavRes() {
                             to="/project"
                             onClick={closeNav} // Close nav when this link is clicked
                             style={({ isActive }) => ({
-                                color: isActive ? "#F0E68C" : "white",
+                                color: isActive ? "grey" : "blue",
                             })}
                         >
                             Project
@@ -90,7 +101,7 @@ function NavRes() {
                         <a
                             href="/path/to/your-resume.pdf"
                             download="My_Resume.pdf"
-                            className="hover:text-[#FFD700] transition-all duration-200"
+                            className="hover:text-red-700 transition-all duration-200"
                             onClick={closeNav}
                         >
                             Resume

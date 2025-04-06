@@ -5,8 +5,8 @@ import { GiDiamonds } from "react-icons/gi";
 
 function Home() {
   return (
-    <div className='flex w-[100%] justify-center items-center bg-white'>
-      <div className='flex flex-col flex-wrap justify-center items-center md:gap-6 gap-4 w-[100%] bg-black text-white mt-20 p-8'>
+    <div className='flex w-[100%] justify-center items-center '>
+      <div className='flex flex-col flex-wrap justify-center items-center md:gap-6 gap-4 w-[100%] mt-20 p-8'>
 
         <div className='flex text-4xl flex-row gap-2'>
           <span className='flex'><GiDiamonds /></span>
@@ -27,8 +27,8 @@ function Home() {
         </span>
 
         <div className='flex flex-row gap-2'>
-          <NavLink className='flex flex-row items-center justify-center bg-gray-50 rounded-lg h-10 w-28 font-bold text-slate-950 gap-2' to="https://github.com/Vikesh115" target='none'><FaGithub />Github</NavLink>
-          <NavLink className='flex flex-row items-center justify-center bg-gray-50 rounded-lg h-10 w-28 font-bold text-slate-950 gap-2' to='https://www.linkedin.com/in/vikesh-raut/' target='none'><FaLinkedin />LinkedIn</NavLink>
+          <NavLink className='flex flex-row items-center justify-center rounded-lg h-10 w-28 font-bold text-slate-950 gap-2' to="https://github.com/Vikesh115" target='none'><FaGithub />Github</NavLink>
+          <NavLink className='flex flex-row items-center justify-center rounded-lg h-10 w-28 font-bold text-slate-950 gap-2' to='https://www.linkedin.com/in/vikesh-raut/' target='none'><FaLinkedin />LinkedIn</NavLink>
         </div>
 
       </div>

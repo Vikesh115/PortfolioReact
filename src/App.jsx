@@ -7,16 +7,24 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Main from "./components/Main";
 import NavRes from "./components/NavRes";
+import { useState } from "react";
 
 function App() {
+
+  const [theme, setTheme] = useState('dark')
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+}
+
   return (
     <>
       <BrowserRouter>
-        <NavRes />
+        <NavRes toggleTheme={toggleTheme} theme={theme}/>
         <Routes>
           <Route
             path='/'
-            element={<Main />}
+            element={<Main theme={theme}/>}
           />
           <Route
             path='/project'
