@@ -7,13 +7,10 @@ import { useSelector } from 'react-redux'
 
 function Main() {
 
-  const {theme} = useSelector(state=>state.theme)
+  const {theme} = useSelector(state => state.theme)
 
   return (
-    <div className={`min-h-screen duration-300 ${theme === 'light'
-      ? 'bg-white text-black'
-      : 'bg-black text-white'
-      }`}>
+    <div className={`${theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}>
         <Home/>
         <Projects/>
         <About/>

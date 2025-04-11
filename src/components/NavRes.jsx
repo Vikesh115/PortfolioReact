@@ -12,6 +12,10 @@ function NavRes() {
     const {theme} = useSelector(state => state.theme)
     const dispatch = useDispatch()
 
+    const handleclick = () => {
+        dispatch(toggletheme(theme === 'light' ? 'dark' : 'light'))
+    }
+
     const handleNav = () => {
         setNav(!nav);
     };
@@ -62,7 +66,7 @@ function NavRes() {
                     >
                         Resume
                     </a>
-                    <button onClick={()=>dispatch(toggletheme())}>
+                    <button onClick={handleclick}>
                         {theme === 'light' ? (
                             <FaMoon size={20} />
                         ) : (
