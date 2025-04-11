@@ -2,17 +2,21 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { project1, project2, skills } from '../shared/data';
+import { useSelector } from 'react-redux';
 
 function Projects() {
+
+  const { theme } = useSelector(state => state.theme)
+
   return (
-    <div className='flex w-[100%] items-center  '>
+    <div className={`flex w-[100%] items-center ${theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}>
       <div className='flex flex-col flex-wrap  items-center gap-2 md:gap-8 w-[100%]  p-4'>
 
         <span className='flex font-bold text-2xl md:pt-20'>Projects</span>
 
         <div className='flex w-[90%] flex-wrap md:flex-nowrap  justify-center '>
           <div className='flex '>
-            <img src="https://images.pexels.com/photos/7991486/pexels-photo-7991486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-l-lg'/>
+            <img src="https://images.pexels.com/photos/7991486/pexels-photo-7991486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-l-lg' />
           </div>
           <div className='flex  flex-col bg-white text-black w-[100%] md:w-[100%] gap-2 justify-center items-center md:rounded-r-lg'>
             <span className='flex text-xl gap-2 items-center justify-center'>
@@ -46,7 +50,7 @@ function Projects() {
 
         <div className='flex w-[90%] flex-wrap md:flex-nowrap  justify-center '>
           <div className='flex '>
-            <img src="https://images.pexels.com/photos/16587507/pexels-photo-16587507/free-photo-of-youtube-music-stream-songs-and-music-videos-app-on-the-display-of-smartphone-or-tablet.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-l-lg'/>
+            <img src="https://images.pexels.com/photos/16587507/pexels-photo-16587507/free-photo-of-youtube-music-stream-songs-and-music-videos-app-on-the-display-of-smartphone-or-tablet.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food" className='flex md:rounded-l-lg' />
           </div>
           <div className='flex  flex-col bg-white text-black w-[100%] md:w-[100%] gap-2 justify-center items-center md:rounded-r-lg'>
             <span className='flex text-xl gap-2 items-center justify-center'>

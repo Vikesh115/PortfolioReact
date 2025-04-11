@@ -3,9 +3,14 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
 import { IoLogoVimeo } from "react-icons/io5";
+import { useSelector, useDispatch } from "react-redux";
+import { toggletheme } from "../redux/slice";
 
-function NavRes({ toggleTheme, theme }) {
+function NavRes() {
     const [nav, setNav] = useState(false);
+
+    const {theme} = useSelector(state => state.theme)
+    const dispatch = useDispatch()
 
     const handleNav = () => {
         setNav(!nav);
@@ -57,7 +62,7 @@ function NavRes({ toggleTheme, theme }) {
                     >
                         Resume
                     </a>
-                    <button onClick={toggleTheme}>
+                    <button onClick={()=>dispatch(toggletheme())}>
                         {theme === 'light' ? (
                             <FaMoon size={20} />
                         ) : (

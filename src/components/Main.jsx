@@ -3,7 +3,12 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Projects from '../pages/Projects'
 import Footer from '../pages/Footer'
-function Main({theme}) {
+import { useSelector } from 'react-redux'
+
+function Main() {
+
+  const {theme} = useSelector(state=>state.theme)
+
   return (
     <div className={`min-h-screen duration-300 ${theme === 'light'
       ? 'bg-white text-black'
